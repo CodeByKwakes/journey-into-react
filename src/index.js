@@ -6,6 +6,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+//==================
+// Here we want to import our stylesheets so that
+// webpack knows to grab it and compile it.
+//==================
+require('./assets/stylesheets/base.scss');
+require('./assets/stylesheets/lemonade.scss');  
+require('./assets/stylesheets/navigation.scss');
 
 //==================
 // Now we replace our App component with the routes component
@@ -14,7 +21,7 @@ import ReactDOM from 'react-dom';
 // import App from './components/app'
 import { Router, browserHistory } from 'react-router';
 import routes from './routes';
-
+ 
 //==================
 // This command actually renders the component into
 // the element with the id #app which we added in
